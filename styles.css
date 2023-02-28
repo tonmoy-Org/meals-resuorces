@@ -1,0 +1,24 @@
+.section-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.351), rgba(0, 0, 0, 0.334)), url('./images/banner_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+.text-container {
+    height: 100px;
+    /* set a fixed height */
+    overflow: hidden;
+    /* hide any overflow */
+}
+
+.text-container.show-more {
+    height: auto;
+    /* override fixed height */
+}
+
+@media screen and (max-width:576px) {
+    .display-card {
+        flex-direction: column;
+    }
+}
