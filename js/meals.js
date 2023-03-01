@@ -20,7 +20,7 @@ const displayMeal = (meal, dataLimit) => {
 
     }
    const showAll = document.getElementById('show-more');
-   if (dataLimit && meal.length < 10) {
+   if (dataLimit && meal.length > 10) {
        meal = meal.slice(0, 10);
        showAll.classList.remove('d-none');
    }
